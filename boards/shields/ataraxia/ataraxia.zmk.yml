@@ -1,0 +1,9 @@
+file_format: "1"
+id: ataraxia
+name: ATARAXIA
+type: shield
+url: https://github.com/miketronic/ataraxia
+requires: [pro_micro]
+features:
+  - keys
+  - studio
