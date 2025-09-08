@@ -6,4 +6,5 @@ url: https://github.com/miketronic/ataraxia
 requires: [pro_micro]
 features:
   - keys
+  - trackball
   - studio
