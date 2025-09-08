@@ -7,6 +7,9 @@ if SHIELD_ATARAXIA
 config ZMK_KEYBOARD_NAME
     default "ataraxia"
 
+config SPI
+    default y
+
 endif
 
 
