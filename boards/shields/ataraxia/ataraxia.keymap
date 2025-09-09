@@ -51,8 +51,8 @@
 #define SYMZ   &lt SYMBOL Z
 #define MSEA   &lt MOUSE A
 
-#define LSHFT   &kp LSHFT
-#define RSHFT   &kp RSHFT
+#define LSHF    &kp LSHFT
+#define RSHF    &kp RSHFT
 #define COMM    &kp COMMA
 #define GRV     &kp GRAVE
 #define UND     &kp UNDER
@@ -170,7 +170,7 @@
             bindings = <
                 ESCFN   &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P    &kp BSPC
                 NTAB    MSEA    &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp L   &kp SEMI &kp QUOT
-                LSHFT   SYMZ    &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   COMM    &kp DOT &kp SLSH &kp CAPS
+                LSHF    SYMZ    &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   COMM    &kp DOT &kp SLSH &kp CAPS
                                 &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
             >;
         };
@@ -180,7 +180,7 @@
             bindings = <
                 GRV &kp EXCL  &kp AT  &kp HASH  &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp PIPE &none &none
                 GRV &kp TILDE UND     &kp EQUAL &none    &bkt  &brc  &par      &thn   &kp BSLH &none &none
-                LSHFT &none &kp PLUS  &kp MINUS &none    &none &none &kp COLON &trans &kp SEMI &kp RSHFT &none
+                LSHF  &none &kp PLUS  &kp MINUS &none    &none &none &kp COLON &trans &kp SEMI &kp RSHF &none
                                  &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
             >;
         };
@@ -190,7 +190,7 @@
             bindings = <
                 &none &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
                 &none &none  &none  &none  &none  &none  &none  &kp N4 &kp N5 &kp N6 &none  &none
-                LSHFT &none  &none  &none  &none  &none  c&none &kp N1 &kp N2 &kp N3 &none  RSHcFT 
+                LSHF  &none  &none  &none  &none  &none  c&none &kp N1 &kp N2 &kp N3 &none  RSHF 
                                  &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
             >;
         };
