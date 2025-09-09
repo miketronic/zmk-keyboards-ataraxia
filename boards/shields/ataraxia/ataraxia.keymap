@@ -170,7 +170,7 @@
             bindings = <
                 ESCFN   &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P    &kp BSPC
                 NTAB    MSEA    &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp L   &kp SEMI &kp QUOT
-                LSHF    SYMZ    &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   COMM    &kp DOT &kp SLSH &kp CAPS
+                LSHF    SYMZ    &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   COMM    &kp DOT &kp FSLH &kp CAPS
                                 &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
             >;
         };
