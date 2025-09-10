@@ -1,18 +1,18 @@
 #include "ataraxia-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
-&layout_ataraxia {
+&physical_layout0 {
     transform = <&matrix_transform>;
 };
 
 / {
-	chosen {
+    chosen {
         zmk,kscan = &kscan0;
-		zmk,physical-layout = &layout_ataraxia;
-	};
-   
-	matrix_transform: keymap_transform_0 {
-		compatible = "zmk,matrix-transform";
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    matrix_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
 		columns = <12>;
 		rows = <4>;
 		
