@@ -33,12 +33,16 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
 #include <behaviors.dtsi>
-#include <input/processors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <input/processors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/behaviors.h>
+#include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+
 
 #define ALPHA       0
 #define SYMBOL      1
