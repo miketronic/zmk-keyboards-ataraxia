@@ -1,10 +1,12 @@
+#include <physical_layouts.dtsi>
 
 / {
 	layout_ataraxia: layout_ataraxia {
 		compatible = "zmk,physical-layout";
-		display-name = "ataraxia";
-		transform = <&default_transform>;
-		kscan = <&kscan0>;
+		display-name = "ataraxia_layout";
+
+        kscan = <&kscan0>;
+		transform = <&matrix_transform>;
 		
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -64,7 +66,5 @@
 	    , <          39 40 41 42 43 44             >
 	    ;
         };
-    };
-
-   
+    };   
 };
