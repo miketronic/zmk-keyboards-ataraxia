@@ -75,7 +75,7 @@
 
 &mmv_input_listener {
         standard {
-            layers = <MOUSE>;
+            layers = <4>;
             input-processors = <&zip_xy_scaler 3 1>;
         };
 };
