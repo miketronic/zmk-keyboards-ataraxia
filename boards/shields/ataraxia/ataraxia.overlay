@@ -67,9 +67,9 @@
     trackball_listener { // listener for input device
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <
-            &pointer_accel      // Acceleration processor
-            &zip_xy_transform
-        >;
+        input-processors =
+            <&pointer_accel>,
+            <&zip_ble_report_rate_limit 8>, // from badjeff's https://github.com/badjeff/zmk-input-processor-report-rate-limit/blob/main/dts/input/processors/report_rate_limit.dtsi
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
     };
 };
