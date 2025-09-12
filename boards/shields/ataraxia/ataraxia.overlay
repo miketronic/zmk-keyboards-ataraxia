@@ -3,7 +3,7 @@
 #include <input/processors.dtsi>
 #include <input/processors/report_rate_limit.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-/* #include <behaviors/input_gestures_accel.dtsi> /*
+#include <behaviors/input_gestures_accel.dtsi>
 
 &pointer_accel {
     input-type = <INPUT_EV_REL>;
@@ -62,12 +62,15 @@
             , <&shifter 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
             ;
     };
+};
 
+/ {
     trackball_listener { // listener for input device
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors =
-            <&pointer_accel>;
-
-        };
+        input-processors = <
+            &pointer_accel      // Acceleration processor
+            &zip_xy_transform
+        >;
+    };
 };
