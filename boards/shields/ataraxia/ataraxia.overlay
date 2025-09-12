@@ -69,7 +69,7 @@
     trackball_listener { // listener for input device
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors =
-            <&pointer_accel>;
+      //  input-processors =
+      //      <&pointer_accel>;
     };
 };
