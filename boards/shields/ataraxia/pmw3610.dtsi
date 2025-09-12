@@ -51,6 +51,6 @@
         /* while force-awake is acitvated, enable this mode to force sampling per 
            4ms, where the default sampling rate is 8ms. */
         /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
-        force-high-performance;
+        // force-high-performance;
     };
 };
