@@ -70,5 +70,4 @@
             <&pointer_accel>;
 
         };
-    };
 };
