@@ -65,10 +65,7 @@
             , <&shifter 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
             ;
     };
-};
 
-
-/ {
     trackball_listener { // listener for input device
         compatible = "zmk,input-listener";
         device = <&trackball>;
