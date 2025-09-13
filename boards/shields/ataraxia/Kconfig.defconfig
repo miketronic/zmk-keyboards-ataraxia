@@ -4,11 +4,11 @@
 
 if SHIELD_ATARAXIA
 
-config ZMK_POINTING
-    default y
-
 config ZMK_KEYBOARD_NAME
     default "ataraxia"
+
+config ZMK_POINTING
+    default y
 
 config SPI
     default y
