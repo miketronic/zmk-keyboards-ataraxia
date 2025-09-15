@@ -4,27 +4,6 @@
  * ataraxia
  */
 
-/*
- * Includes Cem's zmk-rgbled-widget - https://github.com/caksoylar/zmk-rgbled-widget
- * &ind_bat  // indicate battery level
- * &ind_con  // indicate connectivity status
- *
- * List of behvaiors here > https://github.com/zmkfirmware/zmk/tree/main/app/dts/behaviors
- *
- *
- * #undef ZMK_BEHAVIORS_KEEP_ALL
- * #define ZMK_BEHAVIORS_KEEP_BT
- * #define ZMK_BEHAVIORS_KEEP_KP
- * #define ZMK_BEHAVIORS_KEEP_LT
- * #define ZMK_BEHAVIORS_KEEP_MKP
- * #define ZMK_BEHAVIORS_KEEP_MMV
- * #define ZMK_BEHAVIORS_KEEP_MSC
- * #define ZMK_BEHAVIORS_KEEP_MT
- * #define ZMK_BEHAVIORS_KEEP_NONE
- * #define ZMK_BEHAVIORS_KEEP_SK
- *
- *
- */
 
 
 
