@@ -67,8 +67,8 @@ sr: &pro_micro_spi {
         row-gpios
             = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
             , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
-            , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // ROW2
-            , <&shifter 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // ROW3
+            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
+            , <&shifter 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
             ;
     };
 };
