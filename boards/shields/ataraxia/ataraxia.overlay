@@ -8,19 +8,6 @@
 /* More about input processors: https://zmk.dev/docs/keymaps/input-processors#input-processors-overview */
 
 
-&pro_micro_spi {
-	status = "okay";
-	cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
-	shifter: 595@0 {
-		compatible = "zmk,gpio-595";
-		status = "okay";
-		gpio-controller;
-		spi-max-frequency = <200000>;
-		reg = <0>;
-		#gpio-cells = <2>;
-		ngpios = <8>;
-	};
-};
 
 
 / {
@@ -44,9 +31,9 @@
             ;
         row-gpios
             = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
-            , <&shifter 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
-            , <&shifter 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
-            , <&shifter 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
+            , <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
+            , <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
+            , <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
             ;
     };
 };
