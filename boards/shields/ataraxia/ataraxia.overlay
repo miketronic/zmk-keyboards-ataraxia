@@ -51,18 +51,18 @@
         diode-direction = "col2row";
         wakeup-source;
         col-gpios
-            = <&shifter 7 (GPIO_ACTIVE_LOW)> // COL0
-            , <&shifter 6 (GPIO_ACTIVE_LOW)> // COL1
-            , <&shifter 5 (GPIO_ACTIVE_LOW)> // COL2
-            , <&shifter 4 (GPIO_ACTIVE_LOW)> // COL3
-            , <&shifter 3 (GPIO_ACTIVE_LOW)> // COL4
-            , <&shifter 2 (GPIO_ACTIVE_LOW)> // COL5
-            , <&pro_micro 21 (GPIO_ACTIVE_LOW)> // COL6
-            , <&shifter 15 (GPIO_ACTIVE_LOW)> // COL7
-            , <&pro_micro 10 (GPIO_ACTIVE_LOW)> // COL8
-            , <&pro_micro 16 (GPIO_ACTIVE_LOW)> // COL9
-            , <&pro_micro 15 (GPIO_ACTIVE_LOW)> // COL10
-            , <&pro_micro 14 (GPIO_ACTIVE_LOW)> // COL11
+            = <&shifter 7 GPIO_ACTIVE_LOW> // COL0
+            , <&shifter 6 GPIO_ACTIVE_LOW> // COL1
+            , <&shifter 5 GPIO_ACTIVE_LOW> // COL2
+            , <&shifter 4 GPIO_ACTIVE_LOW> // COL3
+            , <&shifter 3 GPIO_ACTIVE_LOW> // COL4
+            , <&shifter 2 GPIO_ACTIVE_LOW> // COL5
+            , <&pro_micro 21 GPIO_ACTIVE_LOW> // COL6
+            , <&shifter 15 GPIO_ACTIVE_LOW> // COL7
+            , <&pro_micro 10 GPIO_ACTIVE_LOW> // COL8
+            , <&pro_micro 16 GPIO_ACTIVE_LOW> // COL9
+            , <&pro_micro 15 GPIO_ACTIVE_LOW> // COL10
+            , <&pro_micro 14 GPIO_ACTIVE_LOW> // COL11
             ;
         row-gpios
             = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
