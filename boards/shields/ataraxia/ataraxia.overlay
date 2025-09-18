@@ -27,7 +27,6 @@
 	};
 };
 
-/*
 
 &pinctrl {
     pro_micro_spi_default: pro_micro_spi_default {
@@ -46,7 +45,6 @@
     };
 };
 
-*/
 
 
 / {
