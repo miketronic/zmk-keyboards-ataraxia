@@ -26,7 +26,6 @@
 / {
 	chosen {
 		zmk,physical-layout = &layout_ataraxia;
-        zmk,matrix_transform = &default_transform;
 	};
    
 	default_transform: keymap_transform_0 {
