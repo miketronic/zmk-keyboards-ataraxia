@@ -3,3 +3,4 @@
 
 config SHIELD_ATARAXIA
     def_bool $(shields_list_contains,ataraxia)
+    select SPI
