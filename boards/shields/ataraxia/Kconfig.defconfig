@@ -10,8 +10,8 @@ config ZMK_KEYBOARD_NAME
 config ZMK_POINTING
     default y
 
-#config SPI
-#    default y
+config SPI
+    default y
 
 # enable pinctrl
 CONFIG_PINCTRL=y
