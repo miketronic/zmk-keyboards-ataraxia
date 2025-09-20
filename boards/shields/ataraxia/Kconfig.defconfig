@@ -17,7 +17,7 @@ config SPI
 CONFIG_PINCTRL=y
 
 # enable GPIO
-# CONFIG_GPIO=y
+CONFIG_GPIO=y
 
 endif
 
