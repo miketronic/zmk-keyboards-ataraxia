@@ -7,17 +7,17 @@ if SHIELD_ATARAXIA
 config ZMK_KEYBOARD_NAME
     default "ataraxia"
 
-config ZMK_POINTING
-    default y
+# config ZMK_POINTING
+#     default y
 
 config SPI
     default y
 
 # enable pinctrl
-CONFIG_PINCTRL=y
+# CONFIG_PINCTRL=y
 
 # enable GPIO
-CONFIG_GPIO=y
+# CONFIG_GPIO=y
 
 endif
 
