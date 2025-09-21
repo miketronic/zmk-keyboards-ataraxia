@@ -69,8 +69,6 @@
             , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
             ;
     };
-
-*/
-
 };
 
+*/
