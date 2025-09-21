@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
-/*
 
 &spi0 {
 	status = "okay";    
@@ -23,8 +22,6 @@
     };
 };
 
-
-*/
 
 / {
 	chosen {
