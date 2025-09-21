@@ -2,7 +2,7 @@
 #include <physical_layouts.dtsi>
 
 
-&spi0 {
+&nice_nano_v2 {
 	status = "okay";    
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
