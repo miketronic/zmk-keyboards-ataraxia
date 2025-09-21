@@ -5,33 +5,15 @@
  */
 
 
-
-
-
-// #define ZMK_POINTING_DEFAULT_MOVE_VAL 500
-// #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
-
-// #include <behaviors.dtsi>
-#include <input/processors.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
+// #include <input/processors.dtsi>
+// #include <zephyr/dt-bindings/input/input-event-codes.h>
+// #include <dt-bindings/zmk/keys.h>
+// #include <dt-bindings/zmk/bt.h>
+// #include <dt-bindings/zmk/outputs.h>
 
 
 #define ALPHA       0
 
-#define ESCFN  &lt FUNCTION ESC
-#define NTAB   &lt NUMBER TAB
-#define SYMZ   &lt SYMBOL Z
-#define MSEA   &lt MOUSE A
-
-#define LSHF    &kp LSHFT
-#define RSHF    &kp RSHFT
-#define COMM    &kp COMMA
-#define GRV     &kp GRAVE
-#define UND     &kp UNDER
 
 
 &mt {
@@ -45,30 +27,18 @@
 
 / {
 
-    combos {
-
-        compatible = "zmk,combos";
-        combo_bootloader {
-            timeout-ms = <100>;
-            key-positions = <0 11>;
-            bindings = <&bootloader>;
-        };
-    };
-
-    };
-
-
-
     keymap {
         compatible = "zmk,keymap";
 
        ALPHA_layer {
             display-name = "ATARAXIA";  
             bindings = <
-                ESCFN   &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P    &kp BSPC
-                NTAB    MSEA    &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp L   &kp SEMI &kp QUOT
-                &kp LSHFT    SYMZ    &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   COMM    &kp DOT &kp FSLH &kp CAPS
+                &kp A  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I   &kp O   &kp P    &kp X
+                &kp B  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K   &kp L   &kp SEMI &kp Y
+                &kp C  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT &kp FSLH &kp Z
                                 &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
             >;
-        };      
-    };;
+        };
+
+    };
+};
