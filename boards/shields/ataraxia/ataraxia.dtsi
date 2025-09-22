@@ -9,7 +9,7 @@
     pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
 
-	cs-gpios = <&gpio0 24 GPIO_ACTIVE_LOW>; // Pin 0.24 (pin 5) for CS (Chip Select), active low
+	cs-gpios = <&pro_micro 5 GPIO_ACTIVE_LOW>; // Pin 0.24 (pin 5) for CS (Chip Select), active low
 
 	  shifter: 595@0 {
 		    compatible = "zmk,gpio-595";
