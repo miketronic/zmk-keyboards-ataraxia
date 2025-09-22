@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
-
+#include <dt-bindings/zmk/input_transform.h> // TEST
+#include <input/processors.dtsi>             // TEST
 
 &spi1 {
 	status = "okay";    
