@@ -5,11 +5,8 @@
  */
 
 /*
- * Includes Cem's zmk-rgbled-widget - https://github.com/caksoylar/zmk-rgbled-widget
- * &ind_bat  // indicate battery level
- * &ind_con  // indicate connectivity status
  *
- * List of behvaiors here > https://github.com/zmkfirmware/zmk/tree/main/app/dts/behaviors
+ * List of behaviors here > https://github.com/zmkfirmware/zmk/tree/main/app/dts/behaviors
  *
  *
  * #undef ZMK_BEHAVIORS_KEEP_ALL
@@ -34,11 +31,13 @@
 
 #include <behaviors.dtsi>
 #include <input/processors.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
+// #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+// #include <dt-bindings/zmk/ext_power.h>
+// #include <dt-bindings/zmk/input_transform.h>
 
 
 #define ALPHA       0
