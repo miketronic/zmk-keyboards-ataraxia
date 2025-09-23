@@ -1,6 +1,28 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
+&spi1 {
+	status = "okay";    
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
+    pinctrl-names = "default", "sleep";
+
+	cs-gpios = <&pro_micro 5 GPIO_ACTIVE_LOW>; // Pin 0.24 (pin 5) for CS (Chip Select), active low
+
+	  shifter: 595@0 {
+		    compatible = "zmk,gpio-595";
+		    status = "okay";
+		    gpio-controller;
+		    spi-max-frequency = <200000>;
+		    reg = <0>;
+		    #gpio-cells = <2>;
+		    ngpios = <8>;
+    };
+};
+
+
+
 / {
 	chosen {
 		zmk,physical-layout = &layout_ataraxia;
@@ -23,7 +45,7 @@
 		compatible = "zmk,physical-layout";
 		display-name = "ataraxia";
 		transform = <&default_transform>;
-		kscan = <&kscan0>;
+		kscan = <&default_kscan>;
 		
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0    0       0     0     0>
