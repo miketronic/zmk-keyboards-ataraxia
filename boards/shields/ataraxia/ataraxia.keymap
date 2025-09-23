@@ -153,12 +153,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-       ALPHA_layer {
+        ALPHA_layer {
             display-name = "ATARAXIA";  
             bindings = <
                 ESCFN   &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P    &kp BSPC
                 NTAB    MSEA    &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K   &kp L   &kp SEMI &kp QUOT
-                &kp LSHFT    SYMZ    &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   COMM    &kp DOT &kp FSLH &kp CAPS
+                LSHF    SYMZ    &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   COMM    &kp DOT &kp FSLH &kp CAPS
                                 &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
             >;
         };
@@ -168,7 +168,7 @@
             bindings = <
                 GRV &kp EXCL  &kp AT  &kp HASH  &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp PIPE &none &none
                 GRV &kp TILDE UND     &kp EQUAL &none    &bkt  &brc  &par      &thn   &kp BSLH &none &none
-                &kp LSHFT  &none &kp PLUS  &kp MINUS &none    &none &none &kp COLON &trans &kp SEMI &kp RSHFT &none
+                LSHF  &none &kp PLUS  &kp MINUS &none    &none &none &kp COLON &trans &kp SEMI RSHF &none
                                  &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
             >;
         };
@@ -178,7 +178,7 @@
             bindings = <
                 &none &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
                 &none &none  &none  &none  &none  &none  &none  &kp N4 &kp N5 &kp N6 &none  &none
-                &kp LSHFT  &none  &none  &none  &none  &none  &none &kp N1 &kp N2 &kp N3 &none  &kp RSHFT 
+                LSHF  &none  &none  &none  &none  &none  &none &kp N1 &kp N2 &kp N3 &none  RSHF 
                                  &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
             >;
         };
