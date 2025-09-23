@@ -1,5 +1,5 @@
 #include "ataraxia.dtsi"
-/*
+
 / {
     chosen {
         zmk,kscan = &default_kscan;	
@@ -35,8 +35,7 @@
 };
 
 
-*/
-
+/*
 / {
     chosen {
         zmk,kscan = &default_kscan;	
@@ -70,3 +69,4 @@
     };
 };
 
+*/
