@@ -1,5 +1,5 @@
 #include "ataraxia.dtsi"
-
+/*
 / {
     chosen {
         zmk,kscan = &default_kscan;	
@@ -35,9 +35,8 @@
 };
 
 
+*/
 
-
-/*
 / {
     chosen {
         zmk,kscan = &default_kscan;	
@@ -63,7 +62,7 @@
             , <&pro_micro 1 (GPIO_ACTIVE_HIGH)> // COL11
             ;
         row-gpios
-            = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0 21
+            = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0 21
             , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
             , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
             , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3
@@ -71,4 +70,3 @@
     };
 };
 
-*/
