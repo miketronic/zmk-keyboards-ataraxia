@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
-/*
 &spi1 {
 	status = "okay";    
     compatible = "nordic,nrf-spim";
@@ -22,7 +21,7 @@
     };
 };
 
-*/
+
 
 / {
 	chosen {
