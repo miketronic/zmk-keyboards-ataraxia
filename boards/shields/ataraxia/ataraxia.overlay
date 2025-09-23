@@ -28,7 +28,7 @@
             = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
             , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
             , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
-            , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3     &shifter 1 
+            , <&gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3     &shifter 1 
             ;
     };
 
