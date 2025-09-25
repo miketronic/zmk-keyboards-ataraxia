@@ -41,7 +41,8 @@
             , <&shifter 3 GPIO_ACTIVE_HIGH> // COL4
             , <&shifter 2 GPIO_ACTIVE_HIGH> // COL5
             , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL6
-            , <&gpio1 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL7
+            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL7
+          //  , <&gpio1 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL7
           //  , <&shifter 15 GPIO_ACTIVE_HIGH> // COL7
             , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL8
             , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL9
