@@ -4,7 +4,7 @@
 if SHIELD_SETTINGS_RESET_ATARAXIA
 
 config ZMK_KEYBOARD_NAME
-	default "SETTINGS RESET ATARAXIA"
+	default "RESET_ATARAXIA"
 
 config SPI
     default y
