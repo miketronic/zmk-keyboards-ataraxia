@@ -26,7 +26,7 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio1 15 (&pro_micro 1 | GPIO_PULL_UP)>; // MISO/MOTION P0.06
+        irq-gpios = <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // MISO/MOTION P0.06
         cpi = <600>;
         // swap-xy; /* optional */
         // invert-x; /* optional */
