@@ -5,5 +5,5 @@
  */
 
 &nice_view_spi {
-    cs-gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&pro_micro 7 GPIO_ACTIVE_HIGH>;
 };
