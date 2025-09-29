@@ -1,13 +1,26 @@
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-&spi0 {
+#define INPUT_EV_KEY 0x01               /**< Key event */
+#define INPUT_EV_REL 0x02               /**< Relative coordinate event */
+#define INPUT_EV_ABS 0x03               /**< Absolute coordinate event */
+#define INPUT_EV_MSC 0x04               /**< Miscellaneous event */
+#define INPUT_EV_VENDOR_START 0x30      /**< Vendor specific event start */
+#define INPUT_EV_VENDOR_STOP 0x3e       /**< Vendor specific event stop */
+
+#define INPUT_REL_X 0x00                /**< Relative X coordinate */
+#define INPUT_REL_Y 0x01                /**< Relative Y coordinate */
+#define INPUT_REL_WHEEL 0x08            /**< Relative wheel coordinate */
+#define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
+#define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
+
+nice_view_spi: &spi2 {
     status = "okay";
     compatible = "nordic,nrf-spim";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-0 = <&spi2_default>;
+    pinctrl-1 = <&spi2_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>; // NCS P0.08
+    cs-gpios = <&gpio0 11 GPIO_ACTIVE_LOW>; // NCS P0.08
 
     trackball: trackball@0 {
         status = "okay";
