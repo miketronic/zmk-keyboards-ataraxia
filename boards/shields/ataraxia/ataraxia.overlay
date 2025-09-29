@@ -58,12 +58,17 @@
             ;
     };
 
-    trackball_listener { // listener for input device
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&zip_xy_scaler 3 2>;
+};
+
+@trackball_listener { // listener for input device
+    status = "okay";
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+    input-processors = <
+		// &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+		&zip_temp_layer 2 1000
+	>;
            // <&pointer_accel>,
            // <&zip_ble_report_rate_limit 8>, // from badjeff's https://github.com/badjeff/zmk-input-processor-report-rate-limit/blob/main/dts/input/processors/report_rate_limit.dtsi
            // <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
-    };
 };
