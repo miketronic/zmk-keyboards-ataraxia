@@ -65,7 +65,7 @@
 	status = "disabled";
 };
 
-&pmw0 {
+&pwm0 {
 	status = "disabled";
 };
 
