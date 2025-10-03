@@ -1,6 +1,3 @@
-&uart0 {
-	status = "disabled";
-};
 
 &pinctrl {
     spi0_default: spi0_default {
@@ -55,6 +52,19 @@
     };
 
 };
+
+&uart0 {
+	status = "disabled";
+};
+
+&i2c0 {
+	status = "disabled";
+};
+
+&pmw0 {
+	status = "disabled";
+};
+
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
