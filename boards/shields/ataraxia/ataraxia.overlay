@@ -2,7 +2,6 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-CONFIG_PMW3610_INIT_POWER_UP_EXTRA_DELAY_MS=1000
 
 / {
     chosen {
