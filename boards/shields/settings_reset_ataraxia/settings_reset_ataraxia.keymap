@@ -17,7 +17,7 @@
             display-name = "reset";  
             bindings = <
                 bl bl bl bl bl bl bl bl bl bl bl bl
-                bl bl bl bl bl bl bl bl bl bl bl bl
+                bl bl bl bl bl bl bl bl bl bl bl &sys_reset
                 bl bl bl bl bl bl bl bl bl bl bl bl
                          bl bl bl bl bl &sys_reset
 		    >;
