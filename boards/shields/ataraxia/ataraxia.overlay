@@ -38,9 +38,15 @@
 
 };
 
+
+
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
+    status = "okay";
     device = <&trackball>;
+    input-processors = <
+        &pointer_accel      // Acceleration processor
+        >;
   };
 };
