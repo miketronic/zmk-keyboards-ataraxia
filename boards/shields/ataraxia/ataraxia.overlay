@@ -61,8 +61,8 @@
     compatible = "zmk,input-listener";
     status = "okay";
     device = <&trackball>;
-    input-processors = <
-        &pointer_accel      // Acceleration processor
-        >;
+    input-processors =
+            <&pointer_accel>,
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
   };
 };
