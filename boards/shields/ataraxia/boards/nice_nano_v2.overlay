@@ -131,6 +131,7 @@ nice_view_spi: &spi2 {
 };
 
 
+
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
