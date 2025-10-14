@@ -102,7 +102,8 @@ nice_view_spi: &spi2 {
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-
+        
+        force-awake;
         force-high-performance;
         // force-awake;
         /* keep the sensor awake while ZMK activity state is ACTIVE,
