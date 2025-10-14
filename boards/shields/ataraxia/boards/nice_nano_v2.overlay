@@ -71,6 +71,9 @@
 
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
+
 
 nice_view_spi: &spi2 {
     compatible = "nordic,nrf-spim";
