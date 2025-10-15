@@ -76,15 +76,15 @@
 &pointer_accel { // this needs to be put BEFORE input-listener
     input-type = <INPUT_EV_REL>;
     codes = <INPUT_REL_X INPUT_REL_Y>;
-    sensitivity = <800>;         // 0.8x base sensitivity
-	min-factor = <800>;			  // 0.8x minimum for percision
-    max-factor = <3000>;          // 3.0x maximum acceleration
-    acceleration-exponent = <1>;  // Advanced exponential curve (1-5)
-    y-boost = <1000>;             // 1.0x Y-axis boost for widescreen
-    speed-threshold = <900>;      // Start acceleration at 900 counts/sec, just 1.5 inch/sec
-    speed-max = <1800>;           // Max acceleration at 1800 counts/sec, just 3 inch/sec
-    min-factor = <1000>;          // 1.0x minimum (no deceleration)
-	sensor-dpi = <600>;
+  //  sensitivity = <800>;         // 0.8x base sensitivity
+  //  min-factor = <800>;			  // 0.8x minimum for percision
+  //  max-factor = <3000>;          // 3.0x maximum acceleration
+  //  acceleration-exponent = <1>;  // Advanced exponential curve (1-5)
+  //  y-boost = <1000>;             // 1.0x Y-axis boost for widescreen
+  //  speed-threshold = <900>;      // Start acceleration at 900 counts/sec, just 1.5 inch/sec
+  //  speed-max = <1800>;           // Max acceleration at 1800 counts/sec, just 3 inch/sec
+  //  min-factor = <1000>;          // 1.0x minimum (no deceleration)
+  //  sensor-dpi = <600>;
 };
 
 nice_view_spi: &spi2 {
@@ -110,7 +110,7 @@ nice_view_spi: &spi2 {
         reg = <0>;
         spi-max-frequency = <4000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // MISO/MOTION P0.06
-        cpi = <800>;
+        cpi = <600>;
         // swap-xy; /* optional */
         // invert-x; /* optional */
         // invert-y; /* optional */
@@ -138,7 +138,6 @@ nice_view_spi: &spi2 {
     status = "okay";
     device = <&trackball>;
     input-processors =
-            <&pointer_accel>,
-            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
+            <&pointer_accel>;
   };
 };
