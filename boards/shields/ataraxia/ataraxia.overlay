@@ -16,27 +16,56 @@
         diode-direction = "col2row";                                                                                                                                                                                                               
         wakeup-source;
         col-gpios
-            = <&shifter 7 GPIO_ACTIVE_HIGH> // COL0
-            , <&shifter 6 GPIO_ACTIVE_HIGH> // COL1
-            , <&shifter 5 GPIO_ACTIVE_HIGH> // COL2
-            , <&shifter 4 GPIO_ACTIVE_HIGH> // COL3
-            , <&shifter 3 GPIO_ACTIVE_HIGH> // COL4
-            , <&shifter 2 GPIO_ACTIVE_HIGH> // COL5
-            , <&shifter 1 GPIO_ACTIVE_HIGH> // COL7
-            , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL6
-          //  , <&gpio1 01 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL7        
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL8
-            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL9
-            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL10
-            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL11
+            = <&shifter 7 GPIO_ACTIVE_HIGH> // COL0 *
+            , <&shifter 6 GPIO_ACTIVE_HIGH> // COL1 *
+            , <&shifter 5 GPIO_ACTIVE_HIGH> // COL2 *
+            , <&shifter 4 GPIO_ACTIVE_HIGH> // COL3 *
+            , <&shifter 3 GPIO_ACTIVE_HIGH> // COL4 *
+            , <&shifter 2 GPIO_ACTIVE_HIGH> // COL5 *
+            , <&shifter 15 GPIO_ACTIVE_HIGH> // COL7 TEST
+            , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL6 *  
+            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL8 *
+            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL9 *
+            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL10 *
+            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL11 *
             ;
         row-gpios
-            = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0
-            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1
-            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2
-            , <&gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3     &shifter 1 
+            = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0 *
+            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1 *
+            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2 *
+            , <&shifter 1 GPIO_ACTIVE_HIGH> // ROW3 TEST 
             ;
     };
 
 };
 
+
+/* Working bodge backup
+
+    default_kscan: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        // label = "default_kscan";
+        diode-direction = "col2row";                                                                                                                                                                                                               
+        wakeup-source;
+        col-gpios
+            = <&shifter 7 GPIO_ACTIVE_HIGH> // COL0 *
+            , <&shifter 6 GPIO_ACTIVE_HIGH> // COL1 *
+            , <&shifter 5 GPIO_ACTIVE_HIGH> // COL2 *
+            , <&shifter 4 GPIO_ACTIVE_HIGH> // COL3 *
+            , <&shifter 3 GPIO_ACTIVE_HIGH> // COL4 *
+            , <&shifter 2 GPIO_ACTIVE_HIGH> // COL5 *
+            , <&shifter 1 GPIO_ACTIVE_HIGH> // COL7
+            , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL6 *
+          //  , <&shifter 15 GPIO_ACTIVE_HIGH> // COL7   
+            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL8 *
+            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL9 *
+            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL10 *
+            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL11 *
+            ;
+        row-gpios
+            = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW0 *
+            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW1 *
+            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW2 *
+            , <&gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // ROW3     &shifter 1 
+            ;
+*/
