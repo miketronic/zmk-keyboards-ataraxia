@@ -22,7 +22,7 @@
             , <&shifter 4 GPIO_ACTIVE_HIGH> // COL3 *
             , <&shifter 3 GPIO_ACTIVE_HIGH> // COL4 *
             , <&shifter 2 GPIO_ACTIVE_HIGH> // COL5 *
-            , <&shifter 15 GPIO_ACTIVE_HIGH> // COL7 TEST
+            , <&shifter 1 GPIO_ACTIVE_HIGH> // COL7 TEST  &shifter 15
             , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL6 *  
             , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL8 *
             , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL9 *
