@@ -67,6 +67,8 @@
 #define COMM    &kp COMMA
 #define GRV     &kp GRAVE
 #define UND     &kp UNDER
+#define MINS    &kp MINUS
+#define UNDS    &kp UNDER
 
 #define MM_U &mmv MOVE_UP
 #define MM_D &mmv MOVE_DOWN
@@ -436,7 +438,7 @@
         MOUSE_layer {
             display-name = "MOUSE";  
             bindings = <
-                &none &none MS_U  MM_U  MS_D  &none   &none &none &none &none &none &none
+                &none &none MS_U  MM_U  MS_D  &none   &none MINS  UNDS  &none &none &none
                 &none &none MM_L  MM_D  MM_R  &none   &none &none &none &none &none &none
                 &none &none MCK   LCK   RCK   &none   &none &none &none &none &none &none  
                                      MCK  RCK  LCK     MCK  RCK  LCK
