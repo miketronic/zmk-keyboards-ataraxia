@@ -71,8 +71,6 @@
 
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-
-/* 
 #include <behaviors/input_gestures_accel.dtsi>
 
 &pointer_accel { // this needs to be put BEFORE input-listener
@@ -89,6 +87,7 @@
   //  sensor-dpi = <600>;
 };
 
+/* 
 */
 
 nice_view_spi: &spi2 {
@@ -141,7 +140,7 @@ nice_view_spi: &spi2 {
     compatible = "zmk,input-listener";
     status = "okay";
     device = <&trackball>;
-    // input-processors =
-    //        <&pointer_accel>;
+    input-processors =
+       <&pointer_accel>;
   };
 };
