@@ -46,6 +46,7 @@
 #define MOUSE       3
 #define MACRO       4
 #define FUNCTION    5
+#define TBALL       6
 
 
 #define NUMG   &lt NUMBER G
@@ -53,9 +54,9 @@
 #define SYMS   &lt SYMBOL S
 #define FUNC   &lt FUNCTION C
 #define MSEH   &lt MOUSE H
+#define TTB    &lt TBALL T
 
-#define LCTD   &hrm LCTRL D
-#define LATT   &hrm LALT T
+
 
 #define CPST   &cccv LC(C) LC(V)
 #define LSPC   &mt LSHIFT SPC
@@ -194,7 +195,20 @@
             key-positions = <32 33>;
             bindings = <&kp QMARK>;
         };
-    };
+
+        compatible = "zmk,combos";
+        combo_qmark {
+            timeout-ms = <50>;
+            key-positions = <7 8 9>;
+            bindings = <&mt RCTRL>;
+        };
+
+        compatible = "zmk,combos";
+        combo_qmark {
+            timeout-ms = <50>;
+            key-positions = <19 20 21>;
+            bindings = <&mt RALT>;
+        };
 
       
     };
@@ -410,7 +424,7 @@
             bindings = <
                 &none &none  &tdW &kp F NUMG &none &none &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none &kp N &kp E &kp I  &none &none
-                &none &none  FUNC LCTD  LATT &none &none MSEH  &tdO  &tdY   &none &none
+                &none &none  FUNC &kp D TTB  &none &none MSEH  &tdO  &tdY   &none &none
                                 &kp TAB LSPC LSPC  RENT RENT &kp DEL
             >;
         };
@@ -462,6 +476,16 @@
                 &none &none  &kp TAB   &none     &pg           &none    &none &kp LEFT &kp DOWN &kp RIGHT &none &none
                 &none &none  &trans    &kp LC(BSPC) &hmend     &none    &none &kp LC(Z) &kp DEL &kp LC(Y) &none &none
                                              &kp TAB LSPC LSPC  RENT    RENT &kp DEL
+            >;
+        };
+
+        TBALL_layer {
+            display-name = "TBALL";  
+            bindings = <
+                &none &none RCK   MCK   LCK   &none   &none RSHF  RCTRL &none &none &none
+                &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none &none &none &none
+                &none &none &none &none &none &none   &none &none &none &none &none &none  
+                                     RCK  MCK  LCK     LCK  MCK  RCK
             >;
         };
 
