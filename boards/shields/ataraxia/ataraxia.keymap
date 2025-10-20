@@ -201,14 +201,14 @@
         combo_rtcl {
             timeout-ms = <50>;
             key-positions = <7 8 9>;
-            bindings = <&kp RCTRL>;
+            bindings = <&mt RCTRL>;
         };
 
         compatible = "zmk,combos";
         combo_ralt {
             timeout-ms = <50>;
             key-positions = <19 20 21>;
-            bindings = <&kp RALT>;
+            bindings = <&mt RALT>;
         };
 
       
