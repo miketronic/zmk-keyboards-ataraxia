@@ -65,6 +65,7 @@
 
 #define LSHF    &kp LSHFT
 #define RSHF    &kp RSHFT
+#define RCTL    &kp RCTRL
 #define COMM    &kp COMMA
 #define GRV     &kp GRAVE
 #define UND     &kp UNDER
@@ -482,7 +483,7 @@
         TBALL_layer {
             display-name = "TBALL";  
             bindings = <
-                &none &none RCK   MCK   LCK   &none   &none RSHF  RCTRL &none &none &none
+                &none &none RCK   MCK   LCK   &none   &none RSHF  RCTL  &none &none &none
                 &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none &none &none &none
                 &none &none &none &none &none &none   &none &none &none &none &none &none  
                                      RCK  MCK  LCK     LCK  MCK  RCK
