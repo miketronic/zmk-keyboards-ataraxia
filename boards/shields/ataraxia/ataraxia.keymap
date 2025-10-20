@@ -197,14 +197,14 @@
         };
 
         compatible = "zmk,combos";
-        combo_qmark {
+        combo_rctrl {
             timeout-ms = <50>;
             key-positions = <7 8 9>;
             bindings = <&mt RCTRL>;
         };
 
         compatible = "zmk,combos";
-        combo_qmark {
+        combo_ralt {
             timeout-ms = <50>;
             key-positions = <19 20 21>;
             bindings = <&mt RALT>;
