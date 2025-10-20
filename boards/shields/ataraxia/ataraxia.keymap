@@ -65,7 +65,7 @@
 
 #define LSHF    &kp LSHFT
 #define RSHF    &kp RSHFT
-#define RCTL    &kp RCTRL
+#define RTCL    &kp RCTRL
 #define COMM    &kp COMMA
 #define GRV     &kp GRAVE
 #define UND     &kp UNDER
@@ -198,7 +198,7 @@
         };
 
         compatible = "zmk,combos";
-        combo_rctl {
+        combo_rtcl {
             timeout-ms = <50>;
             key-positions = <7 8 9>;
             bindings = <&kp RCTRL>;
@@ -483,7 +483,7 @@
         TBALL_layer {
             display-name = "TBALL";  
             bindings = <
-                &none &none RCK   MCK   LCK   &none   &none RSHF  RCTL  &none &none &none
+                &none &none RCK   MCK   LCK   &none   &none RSHF  RTCL  &none &none &none
                 &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none &none &none &none
                 &none &none &none &none &none &none   &none &none &none &none &none &none  
                                      RCK  MCK  LCK     LCK  MCK  RCK
