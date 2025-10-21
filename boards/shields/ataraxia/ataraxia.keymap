@@ -213,13 +213,6 @@
             bindings = <&mt RALT>;
         };
 
-        compatible = "zmk,combos";
-        combo_togqwerty {
-            timeout-ms = <50>;
-            key-positions = <4 7>;
-            bindings = <&tog 7>;
-        };
-
       
     };
 
