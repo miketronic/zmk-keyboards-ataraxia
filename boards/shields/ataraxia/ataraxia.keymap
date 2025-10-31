@@ -103,11 +103,11 @@
 };
 
 &mt {
-    tapping-term-ms = <160>;
+    tapping-term-ms = <140>;
 };
 
 &lt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <140>;
 };
 
 
@@ -424,7 +424,7 @@
                 &none &none  &tdW &kp F NUMG &none &tog 7 &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
                 &none &none  FUNC &kp D TTB  &none &none  MSEH  &tdO  &tdY   &none &none
-                                &kp TAB LSPC LSPC  RENT   RENT  &kp DEL
+                                &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
             >;
         };
 
@@ -481,7 +481,7 @@
         TBALL_layer {
             display-name = "TBALL";  
             bindings = <
-                &none &none RCK   MCK   LCK   &none   &none RSHF  RTCL  &none &none &none
+                &none &none MCK   RCK   LCK   &none   &none RSHF  RTCL  &none &none &none
                 &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none &none &none &none
                 &none &none &none &none &none &none   &none &none &none &none &none &none  
                                      RCK  MCK  LCK     LCK  MCK  RCK
