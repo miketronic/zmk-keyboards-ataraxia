@@ -268,7 +268,7 @@
         };
 
         at: tap_dance_at {
-            compatible = "zmk,behavior-tap-dance";s
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp AT>, <&kp HASH>;
