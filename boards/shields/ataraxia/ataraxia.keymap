@@ -31,13 +31,13 @@
 
 #include <behaviors.dtsi>
 #include <input/processors.dtsi>
-// #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 // #include <dt-bindings/zmk/ext_power.h>
 // #include <dt-bindings/zmk/input_transform.h>
+// #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 
 #define ALPHA       0
@@ -305,7 +305,7 @@
         tdW: tap_dance_W {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <210>;
             bindings = <&kp W>, <&kp ESC>;
         };
 
