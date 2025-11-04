@@ -319,7 +319,7 @@
         tdY: tap_dance_Y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <210>;
             bindings = <&kp Y>, <&kp DOT>;
         };
 
