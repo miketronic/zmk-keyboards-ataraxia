@@ -20,7 +20,14 @@
  * #define ZMK_BEHAVIORS_KEEP_NONE
  * #define ZMK_BEHAVIORS_KEEP_SK
  *
- *
+ *        hrm: homerow_mods {
+ *         compatible = "zmk,behavior-hold-tap";
+ *         #binding-cells = <2>;
+ *         tapping-term-ms = <200>;
+ *         quick-tap-ms = <0>;
+ *         flavor = "tap-preferred";
+ *         bindings = <&kp>, <&kp>;
+ *       };
  */
 
 
@@ -342,15 +349,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp X>, <&tog 7>;
-        };
-
-        hrm: homerow_mods {
-           compatible = "zmk,behavior-hold-tap";
-           #binding-cells = <2>;
-           tapping-term-ms = <200>;
-           quick-tap-ms = <0>;
-           flavor = "tap-preferred";
-           bindings = <&kp>, <&kp>;
         };
 
     };
