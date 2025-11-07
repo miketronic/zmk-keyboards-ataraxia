@@ -219,7 +219,7 @@
         bkt: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
 
@@ -233,14 +233,14 @@
         par: tap_dance_paren {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
 
         thn: tap_dance_then {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             bindings = <&kp LT>, <&kp GT>;
         };
 
@@ -254,35 +254,35 @@
         sls: tap_dance_slash {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             bindings = <&kp FSLH>, <&kp BSLH>;
         };
 
         pipe: tap_dance_pipe {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             bindings = <&kp PIPE>, <&kp AMPS>;
         };
 
         at: tap_dance_at {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             bindings = <&kp AT>, <&kp HASH>;
         };
 
         grvtld: tap_dance_gravetilde {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
 
         perc: tap_dance_perc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             bindings = <&kp PRCNT>, <&kp DLLR>;
         };
 
@@ -308,16 +308,17 @@
         };
 
         tdO: tap_dance_O {
-            compatible = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
-            tapping-term-ms = <210>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
             bindings = <&kp O>, <&kp COMMA>;
         };
 
         tdY: tap_dance_Y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <220>;
             bindings = <&kp Y>, <&kp DOT>;
         };
 
