@@ -56,7 +56,7 @@
 #define FUNC   &lt FUNCTION C
 #define MSEH   &lt MOUSE H
 #define TTB    &lt TBALL T
-#define QW     &to QWERTY
+#define QW     &tog QWERTY
 
 
 
@@ -73,6 +73,7 @@
 #define UND     &kp UNDER
 #define MINS    &kp MINUS
 #define UNDS    &kp UNDER
+#define KF2     &kp F2
 
 #define MM_U &mmv MOVE_UP
 #define MM_D &mmv MOVE_DOWN
@@ -312,7 +313,7 @@
         tdO: tap_dance_O {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <180>;
             bindings = <&kp O>, <&kp COMMA>;
         };
 
@@ -335,15 +336,6 @@
            #binding-cells = <2>;
            flavor = "hold-preferred";
            tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        hrm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
@@ -430,7 +422,7 @@
         ALPHA_layer {
             display-name = "-ATAR-";  
             bindings = <
-                &none &none  &tdW &kp F NUMG &code &tog 7 &kp M &kp L &kp U  &none &none
+                &none &none  &tdW &kp F NUMG &code qw     &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
                 &none &none  FUNC &kp D TTB  &none &none  MSEH  &tdO  &tdY   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
@@ -480,7 +472,7 @@
         FUNCTION_layer {
             display-name = "FUNCTION";  
             bindings = <
-                &none &none  CPST  &kp LC(LA(Q)) &kp LC(LA(G)) &none    &none &kp F2 &kp UP &kp DEL &none &none
+                &none &none  CPST  &kp LC(LA(Q)) &kp LC(LA(G)) &none    &none KF2      &kp UP   &kp DEL   &none &none
                 &none &none  &kp TAB   &none     &pg           &none    &none &kp LEFT &kp DOWN &kp RIGHT &none &none
                 &none &none  &trans    &kp LC(BSPC) &hmend     &none    &none &kp LC(Z) &kp DEL &kp LC(Y) &none &none
                                              &kp TAB LSPC LSPC  RENT    RENT &kp DEL
