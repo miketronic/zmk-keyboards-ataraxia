@@ -344,6 +344,15 @@
             bindings = <&kp X>, <&tog 7>;
         };
 
+        hrm: homerow_mods {
+           compatible = "zmk,behavior-hold-tap";
+           #binding-cells = <2>;
+           tapping-term-ms = <250>;
+           quick-tap-ms = <0>;
+           flavor = "tap-preferred";
+           bindings = <&kp>, <&kp>;
+        };
+
     };
 
     macros {
@@ -420,7 +429,7 @@
         ALPHA_layer {
             display-name = "-ATAR-";  
             bindings = <
-                &none &none  &tdW &kp F NUMG &code T7     &kp M &kp L &kp U  &none &none
+                &none &none  &tdW &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
                 &none &none  FUNC &kp D TTB  &none &none  MSEH  &tdO  &tdY   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
