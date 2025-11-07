@@ -56,7 +56,6 @@
 #define FUNC   &lt FUNCTION C
 #define MSEH   &lt MOUSE H
 #define TTB    &lt TBALL T
-#define QW     &tog QWERTY
 
 
 
@@ -64,6 +63,7 @@
 #define LSPC   &mt LSHIFT SPC
 #define RENT   &mt RSHIFT RET
 #define bl     &bootloader
+#define T7     &tog 7
 
 #define LSHF    &kp LSHFT
 #define RSHF    &kp RSHFT
@@ -422,7 +422,7 @@
         ALPHA_layer {
             display-name = "-ATAR-";  
             bindings = <
-                &none &none  &tdW &kp F NUMG &code QW     &kp M &kp L &kp U  &none &none
+                &none &none  &tdW &kp F NUMG &code T7     &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
                 &none &none  FUNC &kp D TTB  &none &none  MSEH  &tdO  &tdY   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
@@ -472,7 +472,7 @@
         FUNCTION_layer {
             display-name = "FUNCTION";  
             bindings = <
-                &none &none  CPST  &kp LC(LA(Q)) &kp LC(LA(G)) &none    &none KF2      &kp UP   &kp DEL   &none &none
+                &none &none  CPST  &kp LC(LA(Q)) &kp LC(LA(G)) &none    &none &kp F2   &kp UP   &kp DEL   &none &none
                 &none &none  &kp TAB   &none     &pg           &none    &none &kp LEFT &kp DOWN &kp RIGHT &none &none
                 &none &none  &trans    &kp LC(BSPC) &hmend     &none    &none &kp LC(Z) &kp DEL &kp LC(Y) &none &none
                                              &kp TAB LSPC LSPC  RENT    RENT &kp DEL
