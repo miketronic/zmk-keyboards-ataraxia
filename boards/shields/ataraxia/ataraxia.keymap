@@ -56,7 +56,7 @@
 #define FUNC   &lt FUNCTION C
 #define MSEH   &lt MOUSE H
 #define TTB    &lt TBALL T
-#define QW     &tog 7
+#define QW     &tog QWERTY
 
 
 
