@@ -77,7 +77,7 @@
     input-type = <INPUT_EV_REL>;
     codes = <INPUT_REL_X INPUT_REL_Y>;
     sensitivity = <800>;         // 0.8x base sensitivity
-    min-factor = <600>;			  // 0.8x minimum for percision (MB 11/7 - from 800)
+    min-factor = <600>;			  // 0.8x minimum for percision (MB 11/7 - 600 from 800)
     max-factor = <3000>;          // 3.0x maximum acceleration
     acceleration-exponent = <1>;  // Advanced exponential curve (1-5)
     y-boost = <1000>;             // 1.0x Y-axis boost for widescreen
@@ -127,7 +127,7 @@ nice_view_spi: &spi2 {
            thus, the sensor would be a `wakeup-source` */
 
         force-awake-4ms-mode; // Enabled Nov 7 - MB
-        /* while force-awake is acitvated, enable this mode to force sampling per 
+        /* while force-awake is activated, enable this mode to force sampling per 
            4ms, where the default sampling rate is 8ms. */
         /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
     };
