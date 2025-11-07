@@ -63,7 +63,6 @@
 #define LSPC   &mt LSHIFT SPC
 #define RENT   &mt RSHIFT RET
 #define bl     &bootloader
-#define T7     &tog 7
 
 #define LSHF    &kp LSHFT
 #define RSHF    &kp RSHFT
@@ -73,7 +72,6 @@
 #define UND     &kp UNDER
 #define MINS    &kp MINUS
 #define UNDS    &kp UNDER
-#define KF2     &kp F2
 
 #define MM_U &mmv MOVE_UP
 #define MM_D &mmv MOVE_DOWN
