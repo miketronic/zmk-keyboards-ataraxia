@@ -186,7 +186,7 @@
 
         compatible = "zmk,combos";
         combo_x {
-            timeout-ms = <75>;
+            timeout-ms = <100>;
             key-positions = <27 28>;
             bindings = <&kp X>;
         };
@@ -325,7 +325,7 @@
         td20: tap_dance_20 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <240>;
             bindings = <&kp N2>, <&kp N0>;
         };
 
