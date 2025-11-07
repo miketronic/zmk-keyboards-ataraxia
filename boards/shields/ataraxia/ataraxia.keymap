@@ -347,9 +347,9 @@
         hrm: homerow_mods {
            compatible = "zmk,behavior-hold-tap";
            #binding-cells = <2>;
-           tapping-term-ms = <250>;
+           tapping-term-ms = <200>;
            quick-tap-ms = <0>;
-           flavor = "tap-preferred";
+           flavor = "hold-preferred";
            bindings = <&kp>, <&kp>;
         };
 
