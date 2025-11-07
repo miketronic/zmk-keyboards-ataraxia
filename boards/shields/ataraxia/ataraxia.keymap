@@ -310,15 +310,14 @@
         tdO: tap_dance_O {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            flavor = "balanced";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <240>;
             bindings = <&kp O>, <&kp COMMA>;
         };
 
         tdY: tap_dance_Y {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <240>;
             bindings = <&kp Y>, <&kp DOT>;
         };
 
