@@ -308,10 +308,10 @@
         };
 
         tdO: tap_dance_O {
-            compatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <220>;
             bindings = <&kp O>, <&kp COMMA>;
         };
 
