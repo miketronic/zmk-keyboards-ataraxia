@@ -20,14 +20,6 @@
  * #define ZMK_BEHAVIORS_KEEP_NONE
  * #define ZMK_BEHAVIORS_KEEP_SK
  *
- *        hrm: homerow_mods {
- *         compatible = "zmk,behavior-hold-tap";
- *         #binding-cells = <2>;
- *         tapping-term-ms = <200>;
- *         quick-tap-ms = <0>;
- *         flavor = "tap-preferred";
- *         bindings = <&kp>, <&kp>;
- *       };
  */
 
 
@@ -130,96 +122,96 @@
       
         compatible = "zmk,combos";
         combo_q {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <2 3>;
             bindings = <&kp Q>;
         };
 
         compatible = "zmk,combos";
         combo_b {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <3 4>;
             bindings = <&kp B>;
         };
 
         compatible = "zmk,combos";
         combo_j {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <7 8>;
             bindings = <&kp J>;
         };
 
         compatible = "zmk,combos";
         combo_bspc {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <8 9>;
             bindings = <&kp BSPC>;
         };
 
         compatible = "zmk,combos";
         combo_v {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <14 15>;
             bindings = <&kp V>;
         };
 
         compatible = "zmk,combos";
         combo_p {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <15 16>;
             bindings = <&kp P>;
         };
 
         compatible = "zmk,combos";
         combo_k {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <19 20>;
             bindings = <&kp K>;
         };
 
         compatible = "zmk,combos";
         combo_excl {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <20 21>;
             bindings = <&kp EXCL>;
         };
 
         compatible = "zmk,combos";
         combo_z {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <26 27>;
             bindings = <&kp Z>;
         };
 
         compatible = "zmk,combos";
         combo_x {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <27 28>;
             bindings = <&kp X>;
         };
 
         compatible = "zmk,combos";
         combo_qmark {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <32 33>;
             bindings = <&kp QMARK>;
         };
 
         compatible = "zmk,combos";
         combo_rtcl {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <7 8 9>;
             bindings = <&kp RCTRL>;
         };
 
         compatible = "zmk,combos";
         combo_ralt {
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             key-positions = <19 20 21>;
             bindings = <&kp RALT>;
         };
 
-      
+
     };
 
     behaviors {
@@ -227,7 +219,7 @@
         bkt: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
 
@@ -241,14 +233,14 @@
         par: tap_dance_paren {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
 
         thn: tap_dance_then {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&kp LT>, <&kp GT>;
         };
 
@@ -262,35 +254,35 @@
         sls: tap_dance_slash {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&kp FSLH>, <&kp BSLH>;
         };
 
         pipe: tap_dance_pipe {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&kp PIPE>, <&kp AMPS>;
         };
 
         at: tap_dance_at {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&kp AT>, <&kp HASH>;
         };
 
         grvtld: tap_dance_gravetilde {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
 
         perc: tap_dance_perc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             bindings = <&kp PRCNT>, <&kp DLLR>;
         };
 
@@ -318,7 +310,7 @@
         tdO: tap_dance_O {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <210>;
             bindings = <&kp O>, <&kp COMMA>;
         };
 
