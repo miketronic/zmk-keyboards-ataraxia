@@ -61,6 +61,7 @@
 #define CPST   &cccv LC(C) LC(V)
 #define LSPC   &mt LSHIFT SPC
 #define RENT   &mt RSHIFT RET
+#define PRN    &mt LPAR RPAR
 #define bl     &bootloader
 
 #define LSHF    &kp LSHFT
@@ -101,11 +102,11 @@
 };
 
 &mt {
-    tapping-term-ms = <140>;
+    tapping-term-ms = <100>;
 };
 
 &lt {
-    tapping-term-ms = <140>;
+    tapping-term-ms = <100>;
 };
 
 
@@ -429,7 +430,7 @@
         SYMBOL_layer {
             display-name = "SYMBOL";  
             bindings = <
-                &none &none  &grvtld &kp STAR &none  &none   &none &par &bkt &thn  &none &none
+                &none &none  &grvtld &kp STAR &none  &none   &none PRN &bkt &thn  &none &none
                 &none &none  &none   &kp PLUS &none  &none   &none &cln &sls &pipe &none &none
                 &none &none  &none   &pg      &none  &none   &none &qot &at  &perc &none &none
                                  &kp TAB LSPC LSPC  RENT    RENT &kp DEL
