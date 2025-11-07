@@ -106,7 +106,7 @@
 };
 
 &lt {
-    tapping-term-ms = <100>;
+    tapping-term-ms = <140>;
 };
 
 
