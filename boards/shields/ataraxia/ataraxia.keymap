@@ -61,7 +61,7 @@
 #define CPST   &cccv LC(C) LC(V)
 #define LSPC   &mt LSHIFT SPC
 #define RENT   &mt RSHIFT RET
-#define PRN    &mt LPAR RPAR
+#define PRN    &mt RPAR LPAR
 #define bl     &bootloader
 
 #define LSHF    &kp LSHFT
