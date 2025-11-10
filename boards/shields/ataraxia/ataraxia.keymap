@@ -83,6 +83,8 @@
 #define UND     &kp UNDER
 #define MINS    &kp MINUS
 #define UNDS    &kp UNDER
+#define KUP     &kp PG_UP
+#define KDN     &kp PG_DN
 
 #define MM_U &mmv MOVE_UP
 #define MM_D &mmv MOVE_DOWN
@@ -435,8 +437,8 @@
             display-name = "SYMBOL";  
             bindings = <
                 &none &none  &grvtld &kp STAR &none  &none   &none &par &bkt &thn &none &none
-                &none &none  &PG_UP   EQP     &none  &none   &none CLN SLS PIP    &none &none
-                &none &none  &PG_DN   &none   &none  &none   &none QOT ATH PRC    &none &none
+                &none &none  KUP   EQP     &none  &none   &none CLN SLS PIP    &none &none
+                &none &none  KDN   &none   &none  &none   &none QOT ATH PRC    &none &none
                                  &kp TAB LSPC LSPC  RENT    RENT &kp DEL
             >;
         };
@@ -484,8 +486,8 @@
         TBALL_layer {
             display-name = "TBALL";  
             bindings = <
-                &none &none MCK   RCK   LCK   &none   &none RSHF  RTCL  &PG_UP &none &none
-                &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none &PG_DN &none &none
+                &none &none MCK   RCK   LCK   &none   &none RSHF  RTCL  KUP    &none &none
+                &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none KDN    &none &none
                 &none &none &none &none &none &none   &none &none &none &none  &none &none  
                                      RCK  MCK  LCK     LCK  MCK  RCK
             >;
