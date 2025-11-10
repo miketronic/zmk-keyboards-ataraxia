@@ -64,6 +64,7 @@
 #define LSPC   &mt LSHIFT SPC
 #define RENT   &mt RSHIFT RET
 #define PRN    &mt RPAR LPAR
+#define OCOM   &mt COMMA O
 #define bl     &bootloader
 
 #define LSHF    &kp LSHFT
@@ -125,91 +126,91 @@
       
         compatible = "zmk,combos";
         combo_q {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <2 3>;
             bindings = <&kp Q>;
         };
 
         compatible = "zmk,combos";
         combo_b {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <3 4>;
             bindings = <&kp B>;
         };
 
         compatible = "zmk,combos";
         combo_j {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&kp J>;
         };
 
         compatible = "zmk,combos";
         combo_bspc {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <8 9>;
             bindings = <&kp BSPC>;
         };
 
         compatible = "zmk,combos";
         combo_v {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <14 15>;
             bindings = <&kp V>;
         };
 
         compatible = "zmk,combos";
         combo_p {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <15 16>;
             bindings = <&kp P>;
         };
 
         compatible = "zmk,combos";
         combo_k {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&kp K>;
         };
 
         compatible = "zmk,combos";
         combo_excl {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp EXCL>;
         };
 
         compatible = "zmk,combos";
         combo_z {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp Z>;
         };
 
         compatible = "zmk,combos";
         combo_x {
-            timeout-ms = <241>;
+            timeout-ms = <50>;
             key-positions = <27 28>;
             bindings = <&kp X>;
         };
 
         compatible = "zmk,combos";
         combo_qmark {
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             key-positions = <32 33>;
             bindings = <&kp QMARK>;
         };
 
         compatible = "zmk,combos";
         combo_rtcl {
-            timeout-ms = <75>;
+            timeout-ms = <100>;
             key-positions = <7 8 9>;
             bindings = <&kp RCTRL>;
         };
 
         compatible = "zmk,combos";
         combo_ralt {
-            timeout-ms = <75>;
+            timeout-ms = <100>;
             key-positions = <19 20 21>;
             bindings = <&kp RALT>;
         };
@@ -424,7 +425,7 @@
             bindings = <
                 &none &none  &tdW &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
-                &none &none  FUNC &kp D TTB  &none &none  MSEH  &tdO  &tdY   &none &none
+                &none &none  FUNC &kp D TTB  &none &none  MSEH  OCOM  &tdY   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
             >;
         };
