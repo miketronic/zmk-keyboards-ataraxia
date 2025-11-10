@@ -434,9 +434,9 @@
         SYMBOL_layer {
             display-name = "SYMBOL";  
             bindings = <
-                &none &none  &grvtld &kp STAR &none  &none   &none &par &bkt &thn  &none &none
-                &none &none  &pg_up   EQP     &none  &none   &none CLN SLS PIP   &none &none
-                &none &none  &pg_dn   &none   &none  &none   &none QOT ATH PER &none &none
+                &none &none  &grvtld &kp STAR &none  &none   &none &par &bkt &thn &none &none
+                &none &none  &pg_up   EQP     &none  &none   &none CLN SLS PIP    &none &none
+                &none &none  &pg_dn   &none   &none  &none   &none QOT ATH PRC    &none &none
                                  &kp TAB LSPC LSPC  RENT    RENT &kp DEL
             >;
         };
