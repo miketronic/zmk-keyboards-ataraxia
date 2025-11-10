@@ -477,7 +477,7 @@
             display-name = "FUNCTION";  
             bindings = <
                 &none &none  CPST  &kp LC(LA(Q)) &kp LC(LA(G)) &none    &none &kp F2   &kp UP   &kp DEL   &none &none
-                &none &none  &kp TAB   &none     &pg           &none    &none &kp LEFT &kp DOWN &kp RIGHT &none &none
+                &none &none  &kp TAB   &none     &none         &none    &none &kp LEFT &kp DOWN &kp RIGHT &none &none
                 &none &none  &trans    &kp LC(BSPC) &hmend     &none    &none &kp LC(Z) &kp DEL &kp LC(Y) &none &none
                                              &kp TAB LSPC LSPC  RENT    RENT &kp DEL
             >;
