@@ -65,6 +65,14 @@
 #define RENT   &mt RSHIFT RET
 #define PRN    &mt RPAR LPAR
 #define OCOM   &mt COMMA O
+#define YDOT   &mt DOT Y
+#define ATH    &mt AT HASH
+#define PIP    &mt PIPE AMPS
+#define PRC    &mt PRCNT DLLR
+#define QOT    &mt SQT DQT
+#define SLS    &mt FSLH BSLH
+#define CLN    &mt COLON SEMI
+#define EQP    &mt EQUAL PLUS
 #define bl     &bootloader
 
 #define LSHF    &kp LSHFT
@@ -109,7 +117,7 @@
 };
 
 &lt {
-    tapping-term-ms = <140>;
+    tapping-term-ms = <160>;
 };
 
 
@@ -230,7 +238,7 @@
         cln: tap_dance_colon {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp COLON>, <&kp SEMI>;
         };
 
@@ -251,7 +259,7 @@
         qot: tap_dance_quote {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp SQT>, <&kp DQT>;
         };
 
@@ -288,13 +296,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp PRCNT>, <&kp DLLR>;
-        };
-
-        pg: tap_dance_pg {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp PG_DN>, <&kp PG_UP>;
         };
 
         hmend: tap_dance_hmend {
@@ -425,7 +426,7 @@
             bindings = <
                 &none &none  &tdW &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
-                &none &none  FUNC &kp D TTB  &none &none  MSEH  OCOM  &tdY   &none &none
+                &none &none  FUNC &kp D TTB  &none &none  MSEH  OCOM  YDOT   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
             >;
         };
@@ -433,9 +434,9 @@
         SYMBOL_layer {
             display-name = "SYMBOL";  
             bindings = <
-                &none &none  &grvtld &kp STAR &none  &none   &none PRN &bkt &thn  &none &none
-                &none &none  &none   &kp PLUS &none  &none   &none &cln &sls &pipe &none &none
-                &none &none  &none   &pg      &none  &none   &none &qot &at  &perc &none &none
+                &none &none  &grvtld &kp STAR &none  &none   &none &par &bkt &thn  &none &none
+                &none &none  &pg_up   EQP     &none  &none   &none CLN SLS PIP   &none &none
+                &none &none  &pg_dn   &none   &none  &none   &none QOT ATH PER &none &none
                                  &kp TAB LSPC LSPC  RENT    RENT &kp DEL
             >;
         };
@@ -483,9 +484,9 @@
         TBALL_layer {
             display-name = "TBALL";  
             bindings = <
-                &none &none MCK   RCK   LCK   &none   &none RSHF  RTCL  &none &none &none
-                &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none &none &none &none
-                &none &none &none &none &none &none   &none &none &none &none &none &none  
+                &none &none MCK   RCK   LCK   &none   &none RSHF  RTCL  &pg_up &none &none
+                &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none &pg_dn &none &none
+                &none &none &none &none &none &none   &none &none &none &none  &none &none  
                                      RCK  MCK  LCK     LCK  MCK  RCK
             >;
         };
