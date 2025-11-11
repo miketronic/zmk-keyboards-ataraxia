@@ -288,13 +288,6 @@
             bindings = <&kp AT>, <&kp HASH>;
         };
 
-        grvtld: tap_dance_gravetilde {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp GRAVE>, <&kp TILDE>;
-        };
-
         perc: tap_dance_perc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
