@@ -70,7 +70,7 @@
 #define PIP    &mt AMPS PIPE
 #define PRC    &mt PRCNT DLLR
 #define QOT    &mt DQT SQT
-#define SLS    &mt BSLH RSLH
+#define SLS    &mt BSLH FSLH
 #define CLN    &mt SEMI COLON
 #define EQP    &mt PLUS EQUAL
 #define GRTL   &mt GRAVE TILDE
@@ -432,7 +432,7 @@
             display-name = "SYMBOL";  
             bindings = <
                 &none &none  GRTL  STCT    &none  &none   &none &par &bkt &thn &none &none
-                &none &none  KUP   EQP     &none  &none   &none &none &none &none    &none &none
+                &none &none  KUP   EQP     &none  &none   &none CLN SLS PIP    &none &none 
                 &none &none  KDN   &none   &none  &none   &none QOT ATH PRC    &none &none
                                  &kp TAB LSPC LSPC  RENT    RENT &kp DEL
             >;
