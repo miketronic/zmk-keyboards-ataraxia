@@ -65,14 +65,16 @@
 #define RENT   &mt RSHIFT RET
 #define PRN    &mt RPAR LPAR
 #define OCOM   &mt COMMA O
-#define YDOT   &mt DOT Y
-#define ATH    &mt AT HASH
-#define PIP    &mt PIPE AMPS
+#define YDOT   &mt DOT Y  
+#define ATH    &mt HASH AT
+#define PIP    &mt AMPS PIPE
 #define PRC    &mt PRCNT DLLR
-#define QOT    &mt SQT DQT
-#define SLS    &mt FSLH BSLH
-#define CLN    &mt COLON SEMI
-#define EQP    &mt EQUAL PLUS
+#define QOT    &mt DQT SQT
+#define SLS    &mt BSLH RSLH
+#define CLN    &mt SEMI COLON
+#define EQP    &mt PLUS EQUAL
+#define GRTL   &mt GRAVE TILDE
+#define STCT   &mt CARET STAR
 #define bl     &bootloader
 
 #define LSHF    &kp LSHFT
@@ -115,11 +117,11 @@
 };
 
 &mt {
-    tapping-term-ms = <140>;
+    tapping-term-ms = <160>;
 };
 
 &lt {
-    tapping-term-ms = <160>;
+    tapping-term-ms = <150>;
 };
 
 
@@ -310,7 +312,7 @@
         tdW: tap_dance_W {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <210>;
+            tapping-term-ms = <240>;
             bindings = <&kp W>, <&kp ESC>;
         };
 
@@ -428,7 +430,7 @@
             bindings = <
                 &none &none  &tdW &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
-                &none &none  FUNC &kp D TTB  &none &none  MSEH  OCOM  YDOT   &none &none
+                &none &none  FUNC &kp D TTB  &none &none  MSEH  &tdO  &tdY   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
             >;
         };
@@ -436,7 +438,7 @@
         SYMBOL_layer {
             display-name = "SYMBOL";  
             bindings = <
-                &none &none  &grvtld &kp STAR &none  &none   &none &par &bkt &thn &none &none
+                &none &none  GRTL  STCT    &none  &none   &none &par &bkt &thn &none &none
                 &none &none  KUP   EQP     &none  &none   &none CLN SLS PIP    &none &none
                 &none &none  KDN   &none   &none  &none   &none QOT ATH PRC    &none &none
                                  &kp TAB LSPC LSPC  RENT    RENT &kp DEL
