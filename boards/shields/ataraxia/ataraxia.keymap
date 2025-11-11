@@ -216,7 +216,7 @@
         compatible = "zmk,combos";
         combo_dot {
             timeout-ms = <100>;
-            layers = <0>;
+            layers = <ALPHA>;
             key-positions = <32 33>;
             bindings = <&kp DOT>;
         };
@@ -231,7 +231,7 @@
         compatible = "zmk,combos";
         combo_comma {
             timeout-ms = <100>;
-            layers = <0>;
+            layers = <ALPHA>;
             key-positions = <20 21>;
             bindings = <&kp COMMA>;
         };
@@ -246,7 +246,7 @@
         compatible = "zmk,combos";
         combo_qmark2 {
             timeout-ms = <100>;
-            layers = <1 2>;
+            layers = <SYMBOL>;
             key-positions = <32 33>;
             bindings = <&kp QMARK>;
         };
@@ -254,10 +254,11 @@
         compatible = "zmk,combos";
         combo_excl2 {
             timeout-ms = <100>;
-            layers = <1 2>;
-            key-positions = <22 21>;
+            layers = <SYMBOL>;
+            key-positions = <20 21>;
             bindings = <&kp EXCL>;
         };
+
 
 
     };
