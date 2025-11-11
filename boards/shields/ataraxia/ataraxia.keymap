@@ -231,7 +231,7 @@
         combo_comma {
             timeout-ms = <100>;
             key-positions = <20 21>;
-            bindings = <&kp COMMA;
+            bindings = <&kp COMMA>;
         };
 
         compatible = "zmk,combos";
