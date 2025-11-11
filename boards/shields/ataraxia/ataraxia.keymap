@@ -216,6 +216,7 @@
         compatible = "zmk,combos";
         combo_dot {
             timeout-ms = <100>;
+            layers = <0>;
             key-positions = <32 33>;
             bindings = <&kp DOT>;
         };
@@ -230,6 +231,7 @@
         compatible = "zmk,combos";
         combo_comma {
             timeout-ms = <100>;
+            layers = <0>;
             key-positions = <20 21>;
             bindings = <&kp COMMA>;
         };
