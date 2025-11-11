@@ -186,13 +186,6 @@
         };
 
         compatible = "zmk,combos";
-        combo_excl {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp EXCL>;
-        };
-
-        compatible = "zmk,combos";
         combo_z {
             timeout-ms = <50>;
             key-positions = <26 27>;
@@ -207,13 +200,6 @@
         };
 
         compatible = "zmk,combos";
-        combo_qmark {
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&kp QMARK>;
-        };
-
-        compatible = "zmk,combos";
         combo_rtcl {
             timeout-ms = <100>;
             key-positions = <7 8 9>;
@@ -225,6 +211,50 @@
             timeout-ms = <100>;
             key-positions = <19 20 21>;
             bindings = <&kp RALT>;
+        };
+
+        compatible = "zmk,combos";
+        combo_dot {
+            timeout-ms = <100>;
+            key-positions = <32 33>;
+            bindings = <&kp DOT>;
+        };
+
+        compatible = "zmk,combos";
+        combo_qmark {
+            timeout-ms = <50>;
+            key-positions = <0 33>;
+            bindings = <&kp QMARK>;
+        };
+
+        compatible = "zmk,combos";
+        combo_comma {
+            timeout-ms = <100>;
+            key-positions = <20 21>;
+            bindings = <&kp COMMA;
+        };
+
+        compatible = "zmk,combos";
+        combo_excl {
+            timeout-ms = <50>;
+            key-positions = <0 21>;
+            bindings = <&kp EXCL>;
+        };
+
+        compatible = "zmk,combos";
+        combo_qmark2 {
+            timeout-ms = <100>;
+            layers = <1 2>;
+            key-positions = <32 33>;
+            bindings = <&kp QMARK>;
+        };
+
+        compatible = "zmk,combos";
+        combo_excl2 {
+            timeout-ms = <100>;
+            layers = <1 2>;
+            key-positions = <22 21>;
+            bindings = <&kp EXCL>;
         };
 
 
@@ -309,19 +339,21 @@
             bindings = <&kp W>, <&kp ESC>;
         };
 
-        tdO: tap_dance_O {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <240>;
-            bindings = <&kp O>, <&kp COMMA>;
-        };
-
-        tdY: tap_dance_Y {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <240>;
-            bindings = <&kp Y>, <&kp DOT>;
-        };
+/*
+ *       tdO: tap_dance_O {
+ *           compatible = "zmk,behavior-tap-dance";
+ *           #binding-cells = <0>;
+ *           tapping-term-ms = <190>;
+ *           bindings = <&kp O>, <&kp COMMA>;
+ *       };
+ *
+ *       tdY: tap_dance_Y {
+ *           compatible = "zmk,behavior-tap-dance";
+ *           #binding-cells = <0>;
+ *           tapping-term-ms = <190>;
+ *           bindings = <&kp Y>, <&kp DOT>;
+ *       };
+ */
 
         td20: tap_dance_20 {
             compatible = "zmk,behavior-tap-dance";
@@ -423,7 +455,7 @@
             bindings = <
                 &none &none  &tdW &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
                 &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
-                &none &none  FUNC &kp D TTB  &none &none  MSEH  &tdO  &tdY   &none &none
+                &none &none  FUNC &kp D TTB  &none &none  MSEH  &kp O &kp Y   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
             >;
         };
