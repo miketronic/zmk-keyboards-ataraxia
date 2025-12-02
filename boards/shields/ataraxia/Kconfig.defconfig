@@ -13,6 +13,9 @@ config ZMK_POINTING
 config SPI
     default y
 
+config PMW3610_ORIENTATION_180
+    bool "PMW3610 rotated 180 deg clockwise"
+
 endif
 
 
