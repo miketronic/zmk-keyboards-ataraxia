@@ -113,6 +113,7 @@ nice_view_spi: &spi2 {
         reg = <0>;
         spi-max-frequency = <4000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // MISO/MOTION P0.06
+        scroll-layers = <2>;
         cpi = <600>;
         swap-xy; /* optional */
         // invert-x; /* optional */
