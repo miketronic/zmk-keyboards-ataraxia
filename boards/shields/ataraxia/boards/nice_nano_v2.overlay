@@ -72,7 +72,6 @@
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors/input_gestures_accel.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
 
 &pointer_accel { // this needs to be put BEFORE input-listener
     input-type = <INPUT_EV_REL>;
@@ -145,6 +144,5 @@ nice_view_spi: &spi2 {
     device = <&trackball>;
     input-processors =
        <&pointer_accel>;
-       <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
   };
 };
