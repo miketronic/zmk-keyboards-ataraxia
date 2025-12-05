@@ -42,7 +42,6 @@
 #define FUNCTION    5
 #define TBALL       6
 #define QWERTY      7
-#define AUTOMOUSE_LAYER 8
 
 
 #define NUMG   &lt NUMBER G
