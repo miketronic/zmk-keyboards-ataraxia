@@ -115,13 +115,13 @@ nice_view_spi: &spi2 {
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // MISO/MOTION P0.06
 
         /* badjeff options begin */
-        // cpi = <600>;
+         cpi = <600>;
         // swap-xy; /* optional */
         // invert-x; /* optional */
         // invert-y; /* optional */
-        // evt-type = <INPUT_EV_REL>;
-        // x-input-code = <INPUT_REL_X>;
-        // y-input-code = <INPUT_REL_Y>;
+         evt-type = <INPUT_EV_REL>;
+         x-input-code = <INPUT_REL_X>;
+         y-input-code = <INPUT_REL_Y>;
         
         // force-awake; // Enabled Nov 7 - MB
         /* keep the sensor awake while ZMK activity state is ACTIVE,
