@@ -140,12 +140,12 @@ nice_view_spi: &spi2 {
         /*   optional features   */
            snipe-layers = <7>;
            scroll-layers = <1 2>;
-           automouse-layer = <5>;
+        // automouse-layer = <5>;
 
         /*   optional: ball action on specific layers  */
          arrows {
              layers = <5>;
-             bindings = <&kp RIGHT_ARROW>, <&kp LEFT_ARROW>, <&kp UP_ARROW>, <&kp DOWN_ARROW>;
+             bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
         
              /*   optional: ball action configuration  */
              tick = <10>;
