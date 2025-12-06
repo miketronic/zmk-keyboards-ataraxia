@@ -143,11 +143,7 @@ nice_view_spi: &spi2 {
         /*   optional: ball action on specific layers  */
          arrows {
              layers = <5>;
-             bindings =
-                 <&kp RIGHT_ARROW>,
-                 <&kp LEFT_ARROW>,
-                 <&kp UP_ARROW>,
-                 <&kp DOWN_ARROW>;
+             bindings = <&kp RIGHT_ARROW>, <&kp LEFT_ARROW>, <&kp UP_ARROW>, <&kp DOWN_ARROW>;
         
              /*   optional: ball action configuration  */
              tick = <10>;
