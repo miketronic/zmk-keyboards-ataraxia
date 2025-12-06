@@ -72,6 +72,8 @@
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors/input_gestures_accel.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 &pointer_accel { // this needs to be put BEFORE input-listener
     input-type = <INPUT_EV_REL>;
@@ -143,7 +145,7 @@ nice_view_spi: &spi2 {
         /*   optional: ball action on specific layers  */
          arrows {
              layers = <5>;
-             bindings = <&kp RIGHT_ARROW &kp LEFT_ARROW &kp UP_ARROW &kp DOWN_ARROW>;
+             bindings = <&kp RIGHT_ARROW>, <&kp LEFT_ARROW>, <&kp UP_ARROW>, <&kp DOWN_ARROW>;
         
              /*   optional: ball action configuration  */
              tick = <10>;
