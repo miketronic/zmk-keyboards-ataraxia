@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2025 miketronic
  * SPDX-License-Identifier: MIT
- * ataraxia v1
+ * ataraxia v1 
  */
 
 /*
@@ -42,7 +42,6 @@
 #define FUNCTION    5
 #define TBALL       6
 #define QWERTY      7
-
 
 #define NUMG   &lt NUMBER G
 #define MACA   &lt MACRO A
@@ -116,7 +115,7 @@
 &lt {
     tapping-term-ms = <150>;
 };
-
+ 
 
 / {
 
@@ -449,9 +448,9 @@
         ALPHA_layer {
             display-name = "-ATAR-";  
             bindings = <
-                &none &none  &tdW &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
-                &none &none  MACA &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
-                &none &none  FUNC &kp D TTB  &none &none  MSEH  &kp O &kp Y   &none &none
+                &none &none  &kp W &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
+                &none &none  MACA  &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
+                &none &none  FUNC  &kp D TTB  &none &none  MSEH  &kp O &kp Y   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
             >;
         };
@@ -469,9 +468,9 @@
         NUMBER_layer {
             display-name = "NUMBER";  
             bindings = <
-                &none &none  &kp TAB STCT     &none &none   &none &kp N7 &kp N8 &kp N9 &none &none
-                &none &none  &none   &none    &none &none   &none &kp N4 &kp N5 &kp N6 &none &none
-                &none &none  bl      &none    &none &none   &none &kp N1 &td20  &kp N3 &none &none 
+                &none &none  &kp ESC      STCT     &none &none   &none &kp N7 &kp N8 &kp N9 &none &none
+                &none &none  &sys_reset   &none    &none &none   &none &kp N4 &kp N5 &kp N6 &none &none
+                &none &none  bl           &none    &none &none   &none &kp N1 &td20  &kp N3 &none &none 
                                  &kp TAB LSPC LSPC  RENT    RENT &kp DEL
             >;
         };
@@ -495,7 +494,7 @@
                                 &kp TAB LSPC LSPC  RENT    RENT &kp DEL
             >;
         };
-
+                
         FUNCTION_layer {
             display-name = "FUNCTION";  
             bindings = <
