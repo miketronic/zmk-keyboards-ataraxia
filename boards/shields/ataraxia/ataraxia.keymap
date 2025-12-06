@@ -41,7 +41,8 @@
 #define MACRO       4
 #define FUNCTION    5
 #define TBALL       6
-#define QWERTY      7
+#define SNIPING     7
+#define QWERTY      8
 
 #define NUMG   &lt NUMBER G
 #define MACA   &lt MACRO A
@@ -49,6 +50,7 @@
 #define FUNC   &lt FUNCTION C
 #define MSEH   &lt MOUSE H
 #define TTB    &lt TBALL T
+#define SNPD   &lt SNIPING D
 
 
 
@@ -450,7 +452,7 @@
             bindings = <
                 &none &none  &kp W &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
                 &none &none  MACA  &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
-                &none &none  FUNC  &kp D TTB  &none &none  MSEH  &kp O &kp Y   &none &none
+                &none &none  FUNC  SNPD  TTB  &none &none  MSEH  &kp O &kp Y   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
             >;
         };
@@ -507,6 +509,16 @@
 
         TBALL_layer {
             display-name = "TBALL";  
+            bindings = <
+                &none &none MCK   RCK   LCK   &none   &none RSHF  RTCL  KUP    &none &none
+                &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none KDN    &none &none
+                &none &none &none &none &none &none   &none &none &none &none  &none &none  
+                                     RCK  MCK  LCK     LCK  MCK  RCK
+            >;
+        };
+
+        SNIPING_layer {
+            display-name = "SNIPE";  
             bindings = <
                 &none &none MCK   RCK   LCK   &none   &none RSHF  RTCL  KUP    &none &none
                 &none &none LSHF  MS_U  MS_D  &none   &none CPST  &none KDN    &none &none
