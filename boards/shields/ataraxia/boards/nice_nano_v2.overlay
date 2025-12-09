@@ -138,20 +138,20 @@ nice_view_spi: &spi2 {
 
         /* kumamuk options begin */ 
         /*   optional features   */
-           snipe-layers = <7>;
-           scroll-layers = <1 2>;
+           snipe-layers = <2>;
+           scroll-layers = <1>;
         // automouse-layer = <5>;
 
         /*   optional: ball action on specific layers  */
-         arrows {
-             layers = <5>;
-             bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
-        
+        // arrows {
+        //     layers = <5>;
+        //     bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
+        //
              /*   optional: ball action configuration  */
-             tick = <20>;
-              wait-ms = <5>;
-              tap-ms = <5>;
-         };
+        //     tick = <20>;
+        //      wait-ms = <5>;
+        //      tap-ms = <5>;
+        // };
         /* kumamuk options end */ 
 
     };
