@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2025 miketronic
  * SPDX-License-Identifier: MIT
- * ataraxia v1 qwerty 5-column
+ * ataraxia v1
  */
 
 /*
@@ -38,23 +38,10 @@
 
 
 #define ALPHA       0
-#define SYMBOL      1
-#define NUMBER      2
-#define FUNCTION    3
-#define MOUSE       4
-#define TBALL       5
-
-#define CPST   &cccv LC(C) LC(V)
-#define ESCFN  &lt FUNCTION ESC
-#define QFN    &lt FUNCTION Q
-#define NTAB   &lt NUMBER TAB
-#define NUMA   &lt NUMBER A
-#define SYMG   &lt SYMBOL G
-#define MMSE   &lt MOUSE M
-#define VBL    &lt TBALL V
-
-#define LSPC   &mt LSHIFT SPC
-#define RENT   &mt RSHIFT RET
+#define NUMBER      1
+#define SYMBOL      2
+#define MOUSE       3
+#define FUNCTION    4
 
 #define LSHF    &kp LSHFT
 #define RSHF    &kp RSHFT
@@ -64,8 +51,8 @@
 #define UND     &kp UNDER
 #define MINS    &kp MINUS
 #define UNDS    &kp UNDER
-#define PGUP1   &kp PG_UP
-#define PGDN1   &kp PG_DN
+#define PGUP    &kp PG_UP
+#define PGDN    &kp PG_DN
 
 #define MM_U &mmv MOVE_UP
 #define MM_D &mmv MOVE_DOWN
@@ -118,63 +105,6 @@
 
     behaviors {
 
-        bkt: tap_dance_bracket {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LBKT>, <&kp RBKT>;
-        };
-
-        brc: tap_dance_brace {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LBRC>, <&kp RBRC>;
-        };
-
-        par: tap_dance_paren {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LPAR>, <&kp RPAR>;
-        };
-
-        thn: tap_dance_then {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LT>, <&kp GT>;
-        };
-
-        td20: tap_dance_20 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <240>;
-            bindings = <&kp N2>, <&kp N0>;
-        };
-
-        delbsp: tap_dance_delbsp {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <240>;
-            bindings = <&kp BSPC>, <&kp DEL>;
-        };
-
-        semqot: tap_dance_semqot {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <240>;
-            bindings = <&kp SEMI>, <&kp QUOT>;
-        };
-
-        cccv: copy_paste {
-           compatible = "zmk,behavior-hold-tap";
-           #binding-cells = <2>;
-           flavor = "hold-preferred";
-           tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
-        };
-
         hrm: homerow_mods {
            compatible = "zmk,behavior-hold-tap";
            #binding-cells = <2>;
@@ -188,79 +118,56 @@
     };
 
 
-
     keymap {
         compatible = "zmk,keymap";
-
 
         ALPHA_layer {
             display-name = "-ATAR-";  
             bindings = <
-                ESCFN   QFN      &kp W   &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I  &kp O   &kp P     &kp BSPC
-                NTAB    NUMA     &kp S   &kp D   &kp F   SYMG   &kp H   &kp J   &kp K   &kp L   &semqot   &kp QUOT
-                LSHF    &kp Z    &kp X   &kp C   VBL     &kp B   &kp N   MMSE    COMM   &kp DOT &kp FSLH  &kp CAPS
-                                &kp TAB  &kp LALT  LSPC     RENT &kp RGUI   &delbsp
-            >;
-        };
-
-/*
-        ALPHA_layer {
-            display-name = "ATARAXIA";  
-            bindings = <
-                &kp A  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I   &kp O   &kp P    &sys_reset
-                &kp B  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K   &kp L   &kp SEMI &kp Y
-                &kp C  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT &kp FSLH &kp Z
-                                &kp A &kp B &kp C  &kp D   &kp E &kp F
-            >;
-        };
-*/
-        SYMBOL_layer {
-            display-name = "SYMBOL";  
-            bindings = <
-                GRV &kp EXCL  &kp AT  &kp HASH  &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp PIPE &none &none
-                GRV &kp TILDE UND     &kp EQUAL &bkt     &none  &brc  &par      &thn   &kp BSLH &none &none
-                LSHF  &none &kp PLUS  &kp MINUS &none    &none &none &kp COLON &trans &kp SEMI RSHF &none
-                                 &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
+                &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O   &kp P    &kp DEL
+                LSHF      &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K  &kp L   &kp SEMI &kp QUOT
+                &kp LCTRL &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  COMM   &kp DOT &kp FSLH &kp RET
+                                 &kp LALT &mo 1 &kp SPC         &kp BSPC  &mo 2  &kp RGUI
             >;
         };
 
         NUMBER_layer {
             display-name = "NUMBER";  
             bindings = <
-                &none &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &none
-                &none &none  &none  &none  &none  &none  &none  &kp N4 &kp N5 &kp N6 &none  &none
-                LSHF  LSHF   &none  &none  &none  &none  &none  &kp N1 &td20  &kp N3 RSHF   RSHF 
-                                 &kp LCTRL &kp LALT &kp SPACE  &kp RET   &kp RGUI &kp DEL
+                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4  &kp N5      &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &none
+                &mo 3   &kp F1 &kp F2 &kp F3 &kp F4  &kp F5      &kp F6  &none   &kp GRAVE &kp MINUS &kp EQUAL &kp BSLH
+                &none   &kp F7 &kp F8 &kp F9 &kp F10 &kp F11     &kp F12 &mo 3   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT 
+                                      &none  &none   &none       &none   &mo 4   &none
             >;
         };
 
-        FUNCTION_layer {
-            display-name = "FUNCTION";  
+        SYMBOL_layer {
+            display-name = "SYMBOL";  
             bindings = <
-                &none       &none  &none  &none  &none  &none  &none  &kp F2   &kp UP   &kp DEL   &bt BT_CLR &bt BT_CLR
-                &sys_reset  &sys_reset  &bootloader &none  &none  &none  &none  &kp LEFT &kp DOWN &kp RIGHT &none &none
-                &bt BT_NXT  &bt BT_NXT  &bt BT_PRV  &none  &none  &none  &none &kp LC(Z) &kp DEL &kp LC(Y) &studio_unlock &bootloader
-                                    &kp TAB LSPC LSPC  RENT    RENT &kp DEL
+                &kp ESC &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS &kp STAR  &kp LPAR  &kp RPAR &none
+                &none   &kp INS  &kp HOME PGUP     &none    &kp LBKT     &kp RBKT  &none    &kp TILDE &kp UNDER &kp PLUS &kp PIPE
+                &none   &kp DEL  &kp END  PGDN     &none    &kp LBRC     &kp RBRC  &none    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT 
+                                               &none &mo 4 &none              &none &none &none
             >;
         };
 
         MOUSE_layer {
             display-name = "MOUSE";  
             bindings = <
-                &none  &none  MS_U  MM_U  MS_D  &none  &none  MINS   UNDS   &none &none &none
-                &none  &none  MM_L  MM_D  MM_R  &none  &none  &none  &none  &none &none &none
-                &none  &none  MCK   LCK   RCK   &none  &none  &none  &none  &none &none &none  
-                                           MCK  RCK  LCK     MCK  RCK  LCK
+                &none &none &none &none &none &none       LCK   RCK   &none &none &none &none
+                &none &none &none &none &none &none       MCK   &none &none &none &none &none
+                &none &none &none &none &none &none       &none &none &none &none &none &none  
+                                  &none &none &none       &none &none &none
             >;
         };
 
-        TBALL_layer {
-            display-name = "TBALL";  
+        FUNCTION_layer {
+            display-name = "FUNCTION";  
             bindings = <
-                &none  &none  MCK    RCK    LCK   &none  &none  RSHF   RTCL   PGUP1 &none &none
-                &none  &none  LSHF   MS_U   MS_D  &none  &none  CPST   &none  PGDN1 &none &none
-                &none  &none  &none  &none  &none &none  &none  &none  &none  &none &none &none  
-                              RCK    MCK    LCK                 LCK  MCK  RCK
+                &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4  &none &none &none &none &none &bt BT_CLR
+                &sys_reset  &kp A  &kp B  &kp C  &kp D  &kp E  &none  &none &none &none &none &bt BT_CLR_ALL
+                &none       &none  &none  &none  &none  &none  &none  &none &none &none &none &bootloader
+                                    &none &none &none       &none &none &none
             >;
         };
 
