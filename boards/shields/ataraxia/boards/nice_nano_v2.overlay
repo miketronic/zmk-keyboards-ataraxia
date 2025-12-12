@@ -147,8 +147,8 @@ nice_view_spi: &spi2 {
              layers = <5>;
              bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
         
-             /*   optional: ball action configuration  */
-             tick = <20>;
+             /*   optional: ball action configuration (20)  */
+             tick = <5>;
               wait-ms = <5>;
               tap-ms = <5>;
          };
