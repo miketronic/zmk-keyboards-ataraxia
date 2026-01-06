@@ -23,7 +23,7 @@
             , <&shifter 3 GPIO_ACTIVE_HIGH>  // COL4 *
             , <&shifter 2 GPIO_ACTIVE_HIGH>  // COL5 *
             , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL6 * 
-            , <&shifter 15 GPIO_ACTIVE_HIGH> // COL7 *
+            , <&shifter 0 GPIO_ACTIVE_HIGH> // COL7 *
             , <&shifter 1 GPIO_ACTIVE_HIGH>  // COL8 *
             , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL9 *
             , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // COL10 *
