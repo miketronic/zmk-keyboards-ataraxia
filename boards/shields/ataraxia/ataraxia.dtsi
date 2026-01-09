@@ -109,14 +109,22 @@
     };
 
    aliases {
-      indicator-led = &user_led;
+      led-red = &led0;
+      led-green = &led1;
+      led-blue = &led2;
    };
 
    leds {
       compatible = "gpio-leds";
       status = "okay";
-      user_led: led_0 {
-        gpios = <&gpio1 06 GPIO_ACTIVE_HIGH>;
+      led0: led_0 {
+        gpios = <&gpio1 06 GPIO_ACTIVE_LOW>;  // red LED, connected to P1.06
+      };
+      led1: led_1 {
+        gpios = <&gpio0 11 GPIO_ACTIVE_LOW>;  // green LED, connected to P0.11
+      };
+      led2: led_2 {
+        gpios = <&gpio1 04 GPIO_ACTIVE_LOW>;  // yellow LED, connected to P1.04
       };
    };
 
