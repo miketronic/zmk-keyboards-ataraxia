@@ -124,7 +124,7 @@
         gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;  // green LED, connected to P0.11
       };
       led2: led_2 {
-        gpios = <&gpio1 04 GPIO_ACTIVE_HIGH>;  // yellow LED, connected to P1.04
+        gpios = <&gpio1 04 GPIO_ACTIVE_LOW>;  // yellow LED, connected to P1.04
       };
    };
 
