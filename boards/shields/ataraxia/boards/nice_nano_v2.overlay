@@ -115,32 +115,14 @@ nice_view_spi: &spi2 {
         reg = <0>;
         spi-max-frequency = <4000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; // MISO/MOTION P0.06
-
-        /* badjeff options begin */
-        // cpi = <600>;
-        // swap-xy; /* optional */
-        // invert-x; /* optional */
-        // invert-y; /* optional */
-        // evt-type = <INPUT_EV_REL>;
-        // x-input-code = <INPUT_REL_X>;
-        // y-input-code = <INPUT_REL_Y>;
         
-        // force-awake; // Enabled Nov 7 - MB
-        /* keep the sensor awake while ZMK activity state is ACTIVE,
-           fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
-           thus, the sensor would be a `wakeup-source` */
-
-        // force-awake-4ms-mode; // Enabled Nov 7 - MB
-        /* while force-awake is activated, enable this mode to force sampling per 
-           4ms, where the default sampling rate is 8ms. */
-        /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
-        /* badjeff options end /*
-
         /* kumamuk options begin */ 
         /*   optional features   */
-           snipe-layers = <1>;
-           scroll-layers = <3>;
+        // snipe-layers = <1>;
+        // scroll-layers = <3>;
         // automouse-layer = <5>;
+        snipe-layers = <4 5>;
+        scroll-layers = <3>;
 
         /*   optional: ball action on specific layers  */
          arrows {
