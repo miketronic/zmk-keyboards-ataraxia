@@ -121,8 +121,8 @@ nice_view_spi: &spi2 {
         // snipe-layers = <1>;
         // scroll-layers = <3>;
         // automouse-layer = <5>;
-        snipe-layers = <4 5>;
-        scroll-layers = <3>;
+        snipe-layers = <7>;
+        scroll-layers = <4 5>;
 
         /*   optional: ball action on specific layers  */
          arrows {
