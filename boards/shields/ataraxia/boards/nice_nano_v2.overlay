@@ -138,13 +138,13 @@ nice_view_spi: &spi2 {
 
         /* kumamuk options begin */ 
         /*   optional features   */
-           snipe-layers = <7>;
+           snipe-layers = <6>;
            scroll-layers = <1 2>;
         // automouse-layer = <5>;
 
         /*   optional: ball action on specific layers  */
          arrows {
-             layers = <5>;
+             layers = <3>;
              bindings = <&kp RIGHT>, <&kp LEFT>, <&kp UP>, <&kp DOWN>;
         
              /*   optional: ball action configuration  */
