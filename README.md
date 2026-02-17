@@ -25,7 +25,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
       import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar
@@ -37,3 +37,22 @@ manifest:
     path: config
 ```
 Once you have the module added to your west.yml you can then build firmware as if it was in your config's shield directory or in ZMK main.
+
+**Note** the ZMK revision of v0.3 above - this repo has not been updated for the latest ZMK so it's pinned to 0.3.
+Also, make sure to use the correct versioning for the (your zmk-config repo)/.github/workflows/build.yml file.  See below, the last line is modified for the 0.3 version.
+
+```
+name: Build ZMK firmware
+on:
+  push:
+    paths:
+      - "config/**"
+      - "build.yaml"
+      - ".github/workflows/build.yml"  
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+```
