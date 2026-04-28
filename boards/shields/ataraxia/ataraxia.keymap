@@ -451,7 +451,7 @@
             display-name = "-ATAR-";  
             bindings = <
                 &none &none  &kp W &kp F NUMG &code &tog7  &kp M &kp L &kp U  &none &none
-                &none &none  MACA  &kp R SYMS &none &none  &kp N &kp E &kp I  &none &none
+                &none &none  MACA  &kp R SYMS &kc ESC &none  &kp N &kp E &kp I  &none &none
                 &none &none  FUNC  SNPD  TTB  &none &none  MSEH  &kp O &kp Y   &none &none
                                 &kp TAB LSPC LSPC  RENT   RENT  &kp BSPC
             >;
